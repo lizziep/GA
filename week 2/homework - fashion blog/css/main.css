@@ -1,3 +1,17 @@
+.clear{
+	clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 body {
 	margin: 0;
 	padding: 3em;
@@ -6,7 +20,7 @@ body {
 	line-height: 1.5;
 	background: #FFF;
 	color: #444;
-	max-width: 70em;
+	max-width: 100%;
 	border-left: 6px solid #DDD;
 }
 a {
@@ -58,21 +72,19 @@ img {
 	max-width: 100%;
 }
 #main {
-     width: 60%;
+     width: 55%;
      float: left;
-     padding-right: 40px
  }
- .column {
- 	width: 40%;
+ #column {
+ 	width: 35%;
  	float: right;
+ 	padding-top: 60px
  }
 .ad {
 	width: 40%;
 	float: right;
 }
-.clear{
-	clear: both;
-}
+
 header h2 {
 	font-size: 1.5em;
 	margin-bottom: .5em;
